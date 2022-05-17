@@ -166,7 +166,12 @@
                             <span>{{__('home.text1')}}</span>
                             <h4 class="mb-3">{{__('home.text2')}}</h4>
                             <p class="mb-4">{{__('home.text3')}}</p>
-                            <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">{{__('home.text4')}}</a>
+                            <!-- <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">{{__('home.text4')}}</a> -->
+                            <ul class="list-inline footer-socials mt-4">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/modulmobilehomes/"><i class="icofont-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://instagram.com/modulmobilehomes"><i class="icofont-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="mailto:info@modulmobilehomes.com"><i class="icofont-email"></i></a></li>
+                            </ul>
                         </div>
 
                         <div class="feature-item mb-5 mb-lg-0">

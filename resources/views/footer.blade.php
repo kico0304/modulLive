@@ -13,9 +13,9 @@
                         </div>
 
                         <ul class="list-inline footer-socials mt-4">
-                            <li class="list-inline-item"><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="icofont-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="icofont-email"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/modulmobilehomes/"><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://instagram.com/modulmobilehomes"><i class="icofont-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:info@modulmobilehomes.com"><i class="icofont-email"></i></a></li>
                         </ul>
                     </div>
                 </div>
