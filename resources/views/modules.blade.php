@@ -124,7 +124,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input name="mailto" id="mailto" type="email" class="form-control"  style="height:0px!important; border: none!important; padding:0!important" value="marijanasebez.mmh@gmail.com">
+                                    <input name="mailto" id="mailto" type="email" class="form-control"  style="height:0px!important; border: none!important; padding:0!important" value="info@modulmobilehomes.com">
                                 </div>
                                 <div class="form-group">
                                     <input name="hiddenSelectedInfo" id="hiddenSelectedInfo" type="text" class="form-control"  style="height:0px!important; border: none!important; padding:0!important">

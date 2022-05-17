@@ -142,12 +142,12 @@
 @section('js')
     <script type="text/javascript">
 
-        let mailToAddressBA = "marijanasebez.mmh@gmail.com";
-        let mailToAddressHR = "marijanasebez.mmh@gmail.com";
-        let mailToAddressSI = "marijanasebez.mmh@gmail.com";
-        let mailToAddressRS = "marijanasebez.mmh@gmail.com";
-        let mailToAddressGR = "marijanasebez.mmh@gmail.com";
-        let mailToAddressMK = "marijanasebez.mmh@gmail.com";
+        let mailToAddressBA = "info@modulmobilehomes.com";
+        let mailToAddressHR = "info@modulmobilehomes.com";
+        let mailToAddressSI = "info@modulmobilehomes.com";
+        let mailToAddressRS = "info@modulmobilehomes.com";
+        let mailToAddressGR = "info@modulmobilehomes.com";
+        let mailToAddressMK = "info@modulmobilehomes.com";
 
         function disableInputs() {
             //getting selected option
