@@ -230,7 +230,7 @@
         $(document).ready(function(){
             var showroom = $.cookie("showroom");
             if(showroom == "yes"){
-                $("#countryChoose>option:eq(2)").click();
+                //$("#countryChoose>option:eq(1)").click();
                 $('#countryChoose').find('option:eq(1)').prop('selected',true).trigger('change');
             }
         });
