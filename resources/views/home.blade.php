@@ -251,6 +251,7 @@
 
     <!-- Initialize Swiper -->
     <script>
+
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -266,8 +267,10 @@
       });
 
       $(".baContact").click(function(){
+          alert(test);
         $.cookie('showroom', 'yes');
       });
+
     </script>
 
 @endsection
