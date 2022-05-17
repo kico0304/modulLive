@@ -269,7 +269,7 @@
       $(".baContact").click(function(){
           //e.preventDefault();
           //alert("test");
-        $.cookie('showroom', 'yes', { path: '/', expires: 10 });
+        $.cookie('showroom', 'yes', { path: '/', expires: 10/24/60/60 });
       });
 
     </script>
