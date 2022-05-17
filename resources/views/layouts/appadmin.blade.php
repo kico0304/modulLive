@@ -49,7 +49,7 @@
 </head>
 <body id="top">
 <div id="app">
-    <div class="col-lg-12">
+    <div class="col-lg-12" style="font-size:15px;">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="col-lg-2">
                 <p><a href="{{ url('/admin/parts')}}">Create New Modul</a></p>
