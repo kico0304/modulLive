@@ -119,6 +119,12 @@ return [
     'module_text8' => 'Anzahl:',
     'module_text9' => 'Oberfläche:',
     'module_text10' => 'Preis:',
+    'module_text11' => 'Ausgewähltes Modul:',
+    'module_text12' => 'Keine Module ausgewählt.',
+    'module_text13' => 'Zusätzliche Optionen ausgewählt:',
+    'module_text14' => 'Es wurden keine zusätzlichen Optionen ausgewählt.',
+    'module_text15' => 'Zurück zur Auswahl der Kombination',
+    'module_text16' => 'Kontaktieren Sie uns mit Ihrer Kombination im Anhang der Nachricht',
 
     /*
     |--------------------------------------------------------------------------

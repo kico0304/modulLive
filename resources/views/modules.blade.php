@@ -83,11 +83,11 @@
                 </div>
                 <div id="selectedResults" class="col-sm-4">
                     <div class="selectedResultsInner fixedElement">
-                        <div id="selectedElements"><p style="font-weight:bold;">Izabrani moduli:</p><p id="nothingSelected">Nije izabran ni jedan modul.</p></div>
-                        <div id="selectedOptions"><p style="font-weight:bold;">Izabrane dodatne opcije:</p><p id="noOptionSelected">Nije izabrana ni jedna dodatna opcija.</p></div>
+                        <div id="selectedElements"><p style="font-weight:bold;">{{__('home.module_text11')}}</p><p id="nothingSelected">{{__('home.module_text12')}}</p></div>
+                        <div id="selectedOptions"><p style="font-weight:bold;">{{__('home.module_text13')}}</p><p id="noOptionSelected">{{__('home.module_text14')}}</p></div>
                         <div id="selectedElementsPrice"><p>{{__('home.module_text7')}} <span id="ukupnaCenaOdabranog">0.00 €</span></p></div>
                         <div>
-                            <button id="contactMyCombButton" class="btn btn-main-2 btn-round-full" style="display:none">Kontakt</button>
+                            <button id="contactMyCombButton" class="btn btn-main-2 btn-round-full" style="display:none">{{__('home.kontakt')}}</button>
                         </div>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 margined10 centered">
-                    <p id="backToMyComb" class="margined20"><< Nazad na izbor kombinacije</p>
-                    <h3 class="centered">Kontaktirajte nas sa Vašom kombinacijom u prilogu poruke</h3>
+                    <p id="backToMyComb" class="margined20"><< {{__('home.module_text15')}}</p>
+                    <h3 class="centered">{{__('home.module_text16')}}</h3>
                 </div>
                 <div class="col-lg-6 col-md-6 margined10 centered">
                     <div id="copiedContent"></div>

@@ -116,6 +116,15 @@ return [
     'module_text5' => 'Additional options:',
     'module_text6' => 'You have selected:',
     'module_text7' => 'Total price:',
+    'module_text8' => 'Količina:',
+    'module_text9' => 'Površina:',
+    'module_text10' => 'Cena:',
+    'module_text11' => 'Izabrani moduli:',
+    'module_text12' => 'Nije izabran ni jedan modul.',
+    'module_text13' => 'Izabrane dodatne opcije:',
+    'module_text14' => 'Nije izabrana ni jedna dodatna opcija.',
+    'module_text15' => 'Nazad na izbor kombinacije',
+    'module_text16' => 'Kontaktirajte nas sa Vašom kombinacijom u prilogu poruke',
 
     /*
     |--------------------------------------------------------------------------
