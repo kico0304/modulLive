@@ -72,9 +72,9 @@ return [
     'text22' => 'MODERNES DESIGN - Passt in jede natürliche Umgebung des Standortes.',
     'text23' => 'ENERGIEEFFIZIENTES SYSTEM - Um den Energieverbrauch zu senken, werden die Eigenschaften der Einrichtung an die Bedürfnisse der Benutzer, die lokalen Anforderungen und Vorschriften angepasst.',
     'text24' => 'Kontaktiere uns',
-    'text25' => 'Zašto MMH?',
+    'text25' => 'Warum MMM?',
     'text26' => 'ModulMobileHomes',
-    'text27' => 'MMH objekti su dimenzionisani prema stvarnim potrebama korisnika, a modularnost i jedinstvenost stambene strukture je postignuta zahvaljujući mogućnostima kombinovanja mobilnih jedinica, koje se modernim dizajnom uklapaju u svako prirodno okruženje.',
+    'text27' => 'MMH-Einrichtungen werden nach den tatsächlichen Bedürfnissen der Nutzer dimensioniert, und die Modularität und Einzigartigkeit der Wohnstruktur wird durch die Möglichkeiten erreicht, mobile Einheiten zu kombinieren, die sich mit modernem Design in jede natürliche Umgebung einfügen.',
 
     /*
     |--------------------------------------------------------------------------
