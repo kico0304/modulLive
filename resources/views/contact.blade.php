@@ -230,7 +230,8 @@
         $(document).ready(function(){
             var showroom = $.cookie("showroom");
             if(showroom == "yes"){
-                $("#countryChoose>option:eq(2)").click();
+                //$("#countryChoose>option:eq(2)").click();
+                $('#countryChoose').find('option:nth-child(' + "Bosna i Hercegovina" + ')').prop('selected',true).trigger('change');
             }
         });
 
