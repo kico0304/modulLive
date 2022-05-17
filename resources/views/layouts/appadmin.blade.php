@@ -49,15 +49,32 @@
 </head>
 <body id="top">
 <div id="app">
-     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-         <p><a href="{{ url('/admin/parts')}}">Create New Modul</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/admin')}}">Create New Product</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/admin/options')}}">Create New Option</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/admin/actualities')}}">Create New Actualities</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/admin/language')}}">Add new Language</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/admin/emails')}}">Emails</a></p>
-         <p style="margin-left: 30px;"><a href="{{ url('/logout')}}" style="color: red;">Logout</a></p>
-    </nav>
+    <div class="col-lg-12">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="col-lg-2">
+                <p><a href="{{ url('/admin/parts')}}">Create New Modul</a></p>
+            </div>
+            <div class="col-lg-2">
+                <p style="margin-left: 30px;"><a href="{{ url('/admin')}}">Create New Product</a></p>
+            </div>
+            <div class="col-lg-2">
+                <p style="margin-left: 30px;"><a href="{{ url('/admin/options')}}">Create New Option</a></p>
+            </div>
+            <div class="col-lg-2">
+                <p style="margin-left: 30px;"><a href="{{ url('/admin/actualities')}}">Create New Actualities</a></p>
+            </div>
+            <div class="col-lg-2">
+                <p style="margin-left: 30px;"><a href="{{ url('/admin/language')}}">Add new Language</a></p>
+            </div>
+            <div class="col-lg-1">
+                <p style="margin-left: 30px;"><a href="{{ url('/admin/emails')}}">Emails</a></p>
+            </div>
+            <div class="col-lg-1">
+                <p style="margin-left: 30px;"><a href="{{ url('/logout')}}" style="color: red;">Logout</a></p>
+            </div>
+        </nav>
+    </div>
+     
     <main>
         @yield('content')
     </main>
