@@ -116,6 +116,9 @@ return [
     'module_text5' => 'Zusätzliche Optionen:',
     'module_text6' => 'Sie haben gewählt:',
     'module_text7' => 'Gesamtpreis:',
+    'module_text8' => 'Anzahl:',
+    'module_text9' => 'Oberfläche:',
+    'module_text10' => 'Preis:',
 
     /*
     |--------------------------------------------------------------------------
