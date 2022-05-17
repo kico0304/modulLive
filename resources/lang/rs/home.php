@@ -40,7 +40,7 @@ return [
     'footer_text11' => 'Svakim radnim danom',
     'footer_text12' => 'Pretplatite se',
     'footer_text13' => 'Unesite e-mail adresu..',
-    'footer_text14' => 'Copyright &copy; Reserved to 2021 Grad Projekt studio doo. Sva prava zadržana.',
+    'footer_text14' => 'Copyright © Reserved to 2021 Grad Projekt studio doo. Sva prava zadržana.',
 
     /*
     |--------------------------------------------------------------------------

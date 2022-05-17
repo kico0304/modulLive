@@ -40,7 +40,7 @@ return [
     'footer_text11' => 'Every working day',
     'footer_text12' => 'Subscribe',
     'footer_text13' => 'Enter an email address.',
-    'footer_text14' => 'Copyright &copy; Reserved to 2021 Grad Projekt studio doo. All rights reserved.',
+    'footer_text14' => 'Copyright © Reserved to 2021 Grad Projekt studio doo. All rights reserved.',
 
     /*
     |--------------------------------------------------------------------------

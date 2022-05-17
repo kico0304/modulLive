@@ -40,7 +40,7 @@ return [
     'footer_text11' => 'Jeden Arbeitstag',
     'footer_text12' => 'Abonnieren',
     'footer_text13' => 'Geben sie ihre E-Mailadresse ein.',
-    'footer_text14' => 'Copyright &copy; Reserved to 2021 Grad Projekt studio doo. Alle Rechte vorbehalten.',
+    'footer_text14' => 'Copyright © Reserved to 2021 Grad Projekt studio doo. Alle Rechte vorbehalten.',
 
     /*
     |--------------------------------------------------------------------------
