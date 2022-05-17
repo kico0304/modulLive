@@ -230,7 +230,7 @@
         $(document).ready(function(){
             var showroom = $.cookie("showroom");
             if(showroom == "yes"){
-                $("#countryChoose").val("Bosna i Hercegovina");
+                $("#countryChoose>option:eq(2)").click();
             }
         });
 
