@@ -70,7 +70,9 @@
                     <div class="position-relative doctor-inner-box">
                         <div class="doctor-profile">
                         <div class="doctor-img">
-                                <img src="{{asset('images/products/product_'.$product->id.'/'.$product->images[0]->name)}}" class="img-fluid w-100">
+                            <a href="{{ route('product', $product->id) }}">
+                                    <img src="{{asset('images/products/product_'.$product->id.'/'.$product->images[0]->name)}}" class="img-fluid w-100">
+                            </a>
                         </div>
                         </div>
                         <div class="content mt-3 product_view" data-id="{{$product->id}}">
