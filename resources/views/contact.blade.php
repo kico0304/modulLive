@@ -231,7 +231,7 @@
             var showroom = $.cookie("showroom");
             if(showroom == "yes"){
                 $("#countryChoose>option:eq(2)").click();
-                $('#countryChoose').find('option:eq(2)').prop('selected',true).trigger('change');
+                $('#countryChoose').find('option:eq(1)').prop('selected',true).trigger('change');
             }
         });
 
