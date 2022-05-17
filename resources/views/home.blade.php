@@ -268,7 +268,7 @@
 
       $(".baContact").click(function(e){
           e.preventDefault();
-          alert(test);
+          alert("test");
         $.cookie('showroom', 'yes');
       });
 
