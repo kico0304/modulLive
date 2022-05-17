@@ -227,6 +227,13 @@
             disableInputs();
         });
 
+        $document.ready(function(){
+            var showroom = $.cookie("showroom");
+            if(showroom == "yes"){
+                $("#countryChoose").val("Bosna i Hercegovina");
+            }
+        });
+
     </script>
 
 @endsection
