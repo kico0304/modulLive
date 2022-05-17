@@ -124,7 +124,7 @@ return [
     'module_text13' => 'Chosen extra options:',
     'module_text14' => 'None of the extra options chosen.',
     'module_text15' => 'Back to combination choice',
-    'module_text16' => 'Contact us with your combination in the message attachment',
+    'module_text16' => 'Contact us with your combination as the message attachment',
 
     /*
     |--------------------------------------------------------------------------
