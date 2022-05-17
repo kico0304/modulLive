@@ -55,22 +55,22 @@
                 <p><a href="{{ url('/admin/parts')}}">Create New Modul</a></p>
             </div>
             <div class="col-lg-2">
-                <p style="margin-left: 30px;"><a href="{{ url('/admin')}}">Create New Product</a></p>
+                <p><a href="{{ url('/admin')}}">Create New Product</a></p>
             </div>
             <div class="col-lg-2">
-                <p style="margin-left: 30px;"><a href="{{ url('/admin/options')}}">Create New Option</a></p>
+                <p><a href="{{ url('/admin/options')}}">Create New Option</a></p>
             </div>
             <div class="col-lg-2">
-                <p style="margin-left: 30px;"><a href="{{ url('/admin/actualities')}}">Create New Actualities</a></p>
+                <p><a href="{{ url('/admin/actualities')}}">Create New Actualities</a></p>
             </div>
             <div class="col-lg-2">
-                <p style="margin-left: 30px;"><a href="{{ url('/admin/language')}}">Add new Language</a></p>
+                <p><a href="{{ url('/admin/language')}}">Add new Language</a></p>
             </div>
             <div class="col-lg-1">
-                <p style="margin-left: 30px;"><a href="{{ url('/admin/emails')}}">Emails</a></p>
+                <p><a href="{{ url('/admin/emails')}}">Emails</a></p>
             </div>
             <div class="col-lg-1">
-                <p style="margin-left: 30px;"><a href="{{ url('/logout')}}" style="color: red;">Logout</a></p>
+                <p><a href="{{ url('/logout')}}" style="color: red;">Logout</a></p>
             </div>
         </nav>
     </div>
