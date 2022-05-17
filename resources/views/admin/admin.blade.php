@@ -159,23 +159,23 @@
                             $i = 0;
                         @endphp
                         @if($parts)
-                        @foreach($parts as $part)
-                            @if(isset($part->id))
-                                <div class="row product_part_row" @if(++$i === $num) style="display: block;" @endif>
-                                    <label>Product Part</label><br>
-                                    <select class="form-control part_pro" name="part_{{$part->id}}">
-                                        <option value="">Select Category</option>
-                                        @if($parts)
-                                            @foreach($parts as $part1)
-                                                @if(isset($part1->id))
-                                                    <option name="{{$part1->id}}" value="{{$part1->id}}" data-id="{{$part1->id}}">{{$part1->part_names()->where('part_id', $part1->id)->where('language', 'en')->first()->name}}</option>
-                                                @endif
-                                            @endforeach
-                                        @endif
-                                    </select>
-                                </div>
-                            @endif
-                        @endforeach
+                            @foreach($parts as $part)
+                                @if(isset($part->id))
+                                    <div class="row product_part_row" @if(++$i === $num) style="display: block;" @endif>
+                                        <label>Product Part</label><br>
+                                        <select class="form-control part_pro" name="part_{{$part->id}}">
+                                            <option value="">Select Category</option>
+                                            @if($parts)
+                                                @foreach($parts as $part1)
+                                                    @if(isset($part1->id))
+                                                        <option name="{{$part1->id}}" value="{{$part1->id}}" data-id="{{$part1->id}}">{{$part1->part_names()->where('part_id', $part1->id)->where('language', 'en')->first()->name}}</option>
+                                                    @endif
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </div>
+                                @endif
+                            @endforeach
                         @endif
 
                         <div class="row">
@@ -204,15 +204,15 @@
                                 <h4 style="margin-top: 20px;">Product Modules</h4>
                                 <div class="col-md-12">
                                     <div class="row">
-                                        @foreach($product->product_parts as $parts)
-                                            @foreach($parts->part_names()->where('language', 'en')->get() as $prt_names)
-                                                <div class="col-md-4 part_product_{{$parts->id}}">
+                                        @foreach($product->product_parts as $parts_pro)
+                                            @foreach($parts_pro->part_names()->where('language', 'en')->get() as $prt_names)
+                                                <div class="col-md-4 part_product_{{$parts_pro->id}}">
                                                     <p style="text-align: center;">{{$prt_names->name}}</p>
-                                                    @foreach($parts->part_images()->where('part_id', $prt_names->part_id)->get() as $prt_images)
-                                                        <img style="max-height: 300px; max-width: 300px; margin-top: 10px;" alt="edit_image" src="{{asset('images/parts/part_'.$parts->id.'/'.$prt_images->name)}}">
+                                                    @foreach($parts_pro->part_images()->where('part_id', $prt_names->part_id)->get() as $prt_images)
+                                                        <img style="max-height: 300px; max-width: 300px; margin-top: 10px;" alt="edit_image" src="{{asset('images/parts/part_'.$parts_pro->id.'/'.$prt_images->name)}}">
                                                     @endforeach
                                                     <br>
-                                                    <button class="btn btn-danger btn-sm delete_part" data-id="{{$parts->id}}" data-product_id="{{$product->id}}">Delete</button>
+                                                    <button class="btn btn-danger btn-sm delete_part" data-id="{{$parts_pro->id}}" data-product_id="{{$product->id}}">Delete</button>
                                                 </div>
                                             @endforeach
                                         @endforeach
