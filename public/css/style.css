@@ -2280,3 +2280,9 @@ img.lightboxed {
         font-size: 32px;
     }
 }
+
+.icofont-facebook,
+.icofont-instagram,
+.icofont-email{
+    font-size: 2rem;
+}
