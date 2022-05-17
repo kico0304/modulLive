@@ -72,7 +72,7 @@ return [
     'text22' => 'MODERAN DIZAJN - uklapanje u prirodni kontekst lokacije.',
     'text23' => 'ENERGETSKI EFIKASAN SISTEM - u cilju manjeg utroška energije, katrakteristike objekta prilagođavaju potrebama korisnika, lokalnim zahtevima i propisima gradnje.',
     'text24' => 'Kontaktirajte nas',
-    'text25' => 'Zašto MMH?test',
+    'text25' => 'Zašto MMH?',
     'text26' => 'ModulMobileHomes',
     'text27' => 'MMH objekti su dimenzionisani prema stvarnim potrebama korisnika, a modularnost i jedinstvenost stambene strukture je postignuta zahvaljujući mogućnostima kombinovanja mobilnih jedinica, koje se modernim dizajnom uklapaju u svako prirodno okruženje.',
 
