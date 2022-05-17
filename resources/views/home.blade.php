@@ -209,7 +209,7 @@
                     <div class="cta-content">
                         <div class="divider mb-4"></div>
                         <h2 class="mb-5 text-lg">{{__('home.text15')}} <span class="title-color">{{__('home.text16')}}</span></h2>
-                        <a href="{{ route('contact') }}" class="btn btn-main-2 btn-round-full">{{__('home.text17')}}<i class="icofont-simple-right  ml-2"></i></a>
+                        <a href="{{ route('contact') }}" class="btn btn-main-2 btn-round-full baContact">{{__('home.text17')}}<i class="icofont-simple-right  ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -263,6 +263,10 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      $(".baContact").click(function(){
+        $.cookie('showroom', 'yes');
       });
     </script>
 
