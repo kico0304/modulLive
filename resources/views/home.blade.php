@@ -266,7 +266,8 @@
         },
       });
 
-      $(".baContact").click(function(){
+      $(".baContact").click(function(e){
+          e.preventDefault();
           alert(test);
         $.cookie('showroom', 'yes');
       });
