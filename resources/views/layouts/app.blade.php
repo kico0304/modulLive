@@ -10,11 +10,11 @@
         <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
         
         <meta property = "og:type" content = "ModulMobileHomes" /> <!-- For website -->
-        <meta property = "og:title" content = "ModulMobileHomes" />
+        <meta property = "og:title" content = "Modul Mobile Homes" />
         <meta property = "og:url" content = "https://modulmobilehomes.com/" />
-        <meta property = "og:description" content = "ModulMobileHomes" />
+        <meta property = "og:description" content = "Modul Mobile Homes" />
         <meta property = "og:image" content = "https://modulmobilehomes.com/favicon.png" />
-        <meta property = "og:site_name" content = "ModulMobileHomes" />
+        <meta property = "og:site_name" content = "Modul Mobile Homes" />
 
         <title>@yield('title')</title>
 
