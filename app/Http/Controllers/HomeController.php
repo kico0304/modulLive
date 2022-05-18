@@ -167,8 +167,6 @@ class HomeController extends Controller
             $q->where('language', '=', $lang);
         }, 'texts' => function($q) use($lang) {
             $q->where('language', '=', $lang);
-        }, 'surface_text' => function($q) use($lang) {
-            $q->where('language', '=', $lang);
         }])->where('id', $id)->get();
 
         return view('product', [
