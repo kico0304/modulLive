@@ -2290,7 +2290,8 @@ img.lightboxed {
 
 /* admin panel update */
 
-.modal_add{
+.modal_add,
+.modal_edit{
     position:fixed!important;
     top:50%;
     left:50%;
