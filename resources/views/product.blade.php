@@ -139,7 +139,7 @@
             areas = areas.split("m2");
             alert(areas);
             var i;
-            for (i = 0; i <= areas.length; ++i) {
+            for (i = 0; i < areas.length - 1; ++i) {
                 $("#appendedAreas").append("<p>"+areas[i]+"m<sup>2</sup></p>");
             }
         });
