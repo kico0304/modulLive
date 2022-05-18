@@ -138,7 +138,7 @@
         $(document).ready(function(){
             var areas = $("#separateAreas").html();
             //areas = areas.replace(/\s/g, '');
-            //areas = areas.replaceAll('m2', 'm2*');
+            areas = areas.replaceAll('M2', 'm2');
             areas = areas.split("m2");
             //alert(areas);
             var i;
