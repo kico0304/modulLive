@@ -62,8 +62,9 @@
                 </div>
                 <div class="col-lg-3 mb-5">
                 @foreach($products as $product)
-                    <div id="separateAreas">{{$product->surface_text[0]->surface}}</div>
+                    <div id="separateAreas" style="display: none;">{{$product->surface_text[0]->surface}}</div>
                 @endforeach
+                    <div id="appendedAreas"></div>
                 </div>
                 <div class="col-lg-5 mb-5">
                     @foreach($products as $product)
@@ -136,7 +137,11 @@
             //areas = areas.replace(/\s/g, '');
             areas = areas.replaceAll('m2', 'm2*');
             areas = areas.split("*");
-            alert(areas);
+            //alert(areas);
+            var i;
+            for (i = 0; i < areas.length; ++i) {
+                $("#appendedAreas").append("<p>"+areas[i]+"</p>");
+            }
         });
     </script>
 
