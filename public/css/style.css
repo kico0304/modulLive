@@ -2321,8 +2321,14 @@ img.lightboxed {
 
 #appendedAreas>.col-lg-6{
     background-color: #eee;
+    padding: 2px 0;
+    margin: 2px 0;
+    text-align: center;
 }
 
 #appendedAreas>.col-lg-12{
-    background-color: #ccc;
+    border: 1px solid #eee;
+    padding: 2px 0;
+    margin: 2px 0;
+    text-align: center;
 }
