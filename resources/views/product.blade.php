@@ -61,6 +61,11 @@
                     </div>
                 @endforeach
                 </div>
+                <div class="col-lg-4 mb-5">
+                @foreach($products as $product)
+                    <p>{{$product->surface_text[0]->surface}}</p>
+                @endforeach
+                </div>
                 <div class="col-lg-8 mb-5">
                     @foreach($products as $product)
                     <div>
