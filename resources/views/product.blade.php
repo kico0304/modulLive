@@ -56,7 +56,7 @@
                 @foreach($products as $product)
                     <div class="flexColumn marginedClass">
                     <i class="icofont-ui-home newIcons2"></i>
-                    <!-- <h3>{{$product->surface}} m<sup>2</sup></h3> -->
+                    <h3>{{$product->surface}} m<sup>2</sup></h3>
                     </div>
                 @endforeach
                 </div>
