@@ -57,7 +57,6 @@
                     <div class="flexColumn marginedClass">
                     <i class="icofont-ui-home newIcons2"></i>
                     <h3>{{$product->surface}} m<sup>2</sup></h3>
-                    <p>{{$product->surface_text[]->surface}}</p>
                     </div>
                 @endforeach
                 </div>
