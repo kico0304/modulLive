@@ -60,13 +60,13 @@
                     </div>
                 @endforeach
                 </div>
-                <div class="col-lg-3 mb-5">
+                <div class="col-lg-4 mb-5">
                 @foreach($products as $product)
                     <div id="separateAreas" style="display: none;">{{$product->surface_text[0]->surface}}</div>
                 @endforeach
                     <div id="appendedAreas"></div>
                 </div>
-                <div class="col-lg-5 mb-5">
+                <div class="col-lg-4 mb-5">
                     @foreach($products as $product)
                     <div>
                         <p class="textJustify">{{$product->texts[0]->text}}</p>
@@ -140,7 +140,7 @@
             alert(areas);
             var i;
             for (i = 0; i < areas.length - 1; ++i) {
-                $("#appendedAreas").append("<p>"+areas[i]+"m<sup>2</sup></p>");
+                $("#appendedAreas").append("<p class='appendedPtag'>"+areas[i]+"m<sup>2</sup></p>");
             }
         });
     </script>
