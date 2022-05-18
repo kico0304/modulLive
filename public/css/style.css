@@ -2318,3 +2318,11 @@ img.lightboxed {
     display: flex;
     flex-wrap: wrap;
 }
+
+#appendedAreas>.col-lg-6{
+    background-color: #eee;
+}
+
+#appendedAreas>.col-lg-12{
+    background-color: #ccc;
+}
