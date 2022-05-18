@@ -133,6 +133,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
             var areas = $("#separateAreas").html();
+            areas = areas.replace(/\s/g, '');
+            areas = areas.split("m2");
             alert(areas);
         });
     </script>
