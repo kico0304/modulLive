@@ -2296,4 +2296,13 @@ img.lightboxed {
     left:50%;
     transform: translate(-50%,-50%);
     width: 90%;
+    margin:0!important;
+}
+
+#product_table_length{
+    padding: 20px;
+}
+
+#product_table_filter{
+    padding: 20px;
 }
