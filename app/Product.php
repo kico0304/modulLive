@@ -29,7 +29,7 @@ class Product extends Model
         return $this->hasMany('App\ProductTexts', 'product_id', 'id');
     }
 
-    public function surface()
+    public function surface_text()
     {
         return $this->hasMany('App\ProductSurface', 'product_id', 'id');
     }
