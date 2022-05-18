@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-lg-3 mb-5">
                 @foreach($products as $product)
-                    <p>{{$product->surface_text[0]->surface}}</p>
+                    <div id="separateAreas">{{$product->surface_text[0]->surface}}</div>
                 @endforeach
                 </div>
                 <div class="col-lg-5 mb-5">
@@ -131,7 +131,10 @@
 
 @section('js')
     <script type="text/javascript">
-
+        $(document).ready(function(){
+            var areas = $("#separateAreas").html();
+            alert(areas);
+        });
     </script>
 
 @endsection
