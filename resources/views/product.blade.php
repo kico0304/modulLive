@@ -139,7 +139,7 @@
             //areas = areas.replace(/\s/g, '');
             //areas = areas.replaceAll('m2', 'm2*');
             areas = areas.split("m2");
-            alert(areas);
+            //alert(areas);
             var i;
             for (i = 0; i < areas.length - 1; ++i) {
                 $("#appendedAreas").append("<p class='appendedPtag'>"+areas[i]+"m<sup>2</sup></p>");
