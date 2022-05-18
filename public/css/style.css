@@ -2298,6 +2298,8 @@ img.lightboxed {
     transform: translate(-50%,-50%);
     width: 90%;
     margin:0!important;
+    max-height: 90%;
+    overflow-y: auto;
 }
 
 #product_table_length{
