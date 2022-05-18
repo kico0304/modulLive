@@ -147,7 +147,7 @@
                                     <p>Text</p>
                                     <textarea name="text_{{$lang->lang}}" type="text" class="form-control">@if ($product->texts()->where('product_id', $product->id)->where('language', $lang->lang)->exists()) {{$product->texts()->where('product_id', $product->id)->where('language', $lang->lang)->first()->text}} @endif</textarea>
                                     <p>Surface Text</p>
-                                    <textarea name="surtxt_{{$lang->lang}}" type="text" class="form-control">@if ($product->surface()->where('product_id', $product->id)->where('language', $lang->lang)->exists()) {{$product->surface()->where('product_id', $product->id)->where('language', $lang->lang)->first()->surface}} @endif</textarea>
+                                    <textarea name="surtxt_{{$lang->lang}}" type="text" class="form-control">@if ($product->surface_text()->where('product_id', $product->id)->where('language', $lang->lang)->exists()) {{$product->surface_text()->where('product_id', $product->id)->where('language', $lang->lang)->first()->surface}} @endif</textarea>
                                 </div>
                             </div>
                         @endforeach
