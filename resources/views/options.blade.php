@@ -9,7 +9,7 @@
         @if($option->type == 'radio')
         <div class="col-sm-12">
             <input class="veryImportantInput2" type="{{$option->type}}" name="{{$option->names[0]->name}}" value="0">
-            <label>No</label>
+            <label>-</label>
         </div>
         @endif
         @php
