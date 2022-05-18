@@ -60,12 +60,12 @@
                     </div>
                 @endforeach
                 </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-3 mb-5">
                 @foreach($products as $product)
                     <p>{{$product->surface_text[0]->surface}}</p>
                 @endforeach
                 </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-5 mb-5">
                     @foreach($products as $product)
                     <div>
                         <p class="textJustify">{{$product->texts[0]->text}}</p>
