@@ -142,7 +142,7 @@
             //alert(areas);
             var i;
             for (i = 0; i < areas.length - 1; ++i) {
-                $("#appendedAreas").append("<div class='col-lg-4'>"+areas[i]+"m<sup>2</sup></div>");
+                $("#appendedAreas").append("<div class='col-lg-6'>"+areas[i]+"m<sup>2</sup></div>");
             }
         });
     </script>
