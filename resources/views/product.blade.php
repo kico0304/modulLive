@@ -60,8 +60,8 @@
                     </div>
                 @endforeach
                 </div>
-                <div class="col-lg-8 mb-5">
-                    <div class="col-lg-12 mb-5">
+                <div class="col-lg-8">
+                    <div class="col-lg-12">
                     @foreach($products as $product)
                         <div id="separateAreas" style="display: none;">{{$product->surface_text[0]->surface}}</div>
                     @endforeach
