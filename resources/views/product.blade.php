@@ -76,6 +76,7 @@
                     </div>
                 @endforeach
                 </div>
+                <div class="divider mx-auto my-4"></div>
                 <div class="col-lg-12 mb-5">
                     @foreach($products as $product)
                     <div>
