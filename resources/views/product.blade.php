@@ -57,7 +57,6 @@
                     <div class="flexColumn marginedClass">
                     <i class="icofont-ui-home newIcons2"></i>
                     <h3>{{$product->surface}} m<sup>2</sup></h3>
-                    <p>{{$product->surface_text[0]->surface}}</p>
                     </div>
                 @endforeach
                 </div>
@@ -66,7 +65,7 @@
                     <p>{{$product->surface_text[0]->surface}}</p>
                 @endforeach
                 </div>
-                <div class="col-lg-8 mb-5">
+                <div class="col-lg-4 mb-5">
                     @foreach($products as $product)
                     <div>
                         <p class="textJustify">{{$product->texts[0]->text}}</p>
