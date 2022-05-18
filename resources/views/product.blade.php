@@ -67,13 +67,6 @@
                     @endforeach
                         <div id="appendedAreas"></div>
                     </div>
-                    <div class="col-lg-12 mb-5">
-                        @foreach($products as $product)
-                        <div>
-                            <p class="textJustify">{{$product->texts[0]->text}}</p>
-                        </div>
-                        @endforeach
-                    </div>
                 </div>
                 <div class="col-lg-2 mb-5 flexCenter">
                 @foreach($products as $product)
@@ -82,6 +75,13 @@
                     <h3>{{$product->price}}</h3>
                     </div>
                 @endforeach
+                </div>
+                <div class="col-lg-12 mb-5">
+                    @foreach($products as $product)
+                    <div>
+                        <p class="textJustify">{{$product->texts[0]->text}}</p>
+                    </div>
+                    @endforeach
                 </div>
                 <div class="col-lg-12 mb-5">
                     <div class="row justify-content-center">
