@@ -60,18 +60,20 @@
                     </div>
                 @endforeach
                 </div>
-                <div class="col-lg-4 mb-5">
-                @foreach($products as $product)
-                    <div id="separateAreas" style="display: none;">{{$product->surface_text[0]->surface}}</div>
-                @endforeach
-                    <div id="appendedAreas"></div>
-                </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-8 mb-5">
+                    <div class="col-lg-12 mb-5">
                     @foreach($products as $product)
-                    <div>
-                        <p class="textJustify">{{$product->texts[0]->text}}</p>
-                    </div>
+                        <div id="separateAreas" style="display: none;">{{$product->surface_text[0]->surface}}</div>
                     @endforeach
+                        <div id="appendedAreas"></div>
+                    </div>
+                    <div class="col-lg-12 mb-5">
+                        @foreach($products as $product)
+                        <div>
+                            <p class="textJustify">{{$product->texts[0]->text}}</p>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
                 <div class="col-lg-2 mb-5 flexCenter">
                 @foreach($products as $product)
