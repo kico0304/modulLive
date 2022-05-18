@@ -89,7 +89,7 @@
                         <div class="col-lg-6 text-center">
                             <div class="">
                                 <h2 class="mainBlue">{{__('home.prod_text3')}}</h2>
-                                <div class="divider mx-auto my-4"></div>
+                                <!-- <div class="divider mx-auto my-4"></div> -->
                                 <p>{{__('home.prod_text4')}}</p>
                             </div>
                         </div>
