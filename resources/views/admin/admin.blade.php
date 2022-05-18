@@ -35,7 +35,7 @@
         </div>
     @endif
 
-    <div class="modal_add" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);width: 90%;height:90%;">
+    <div class="modal_add">
 
         <form method="post" action="{{url('/admin/add_product')}}" enctype="multipart/form-data">
 

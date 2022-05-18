@@ -2286,3 +2286,14 @@ img.lightboxed {
 .icofont-email{
     font-size: 20px;
 }
+
+
+/* admin panel update */
+
+.modal_add{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+}
