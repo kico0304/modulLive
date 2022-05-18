@@ -144,6 +144,7 @@
             for (i = 0; i < areas.length - 1; ++i) {
                 $("#appendedAreas").append("<div class='col-lg-6'>"+areas[i]+"m<sup>2</sup></div>");
             }
+            $("#appendedAreas>.col-lg-6:last").removeClass("col-lg-6").addClass("col-lg-12");
         });
     </script>
 
