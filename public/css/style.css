@@ -2313,3 +2313,8 @@ img.lightboxed {
 .appendedPtag{
     margin-bottom: 0;
 }
+
+#appendedAreas{
+    display: flex;
+    flex-wrap: wrap;
+}
