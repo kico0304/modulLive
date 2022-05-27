@@ -120,8 +120,8 @@
     <script type="text/javascript">
         $(".slicedText").each(function(){
             var text = $(this).html();
-            text = text.slice(0, 150);
-            $(this).html(text);
+            text = text.slice(0, 250);
+            $(this).html(text + "...");
         });
     </script>
 
