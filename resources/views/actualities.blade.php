@@ -50,7 +50,7 @@
                                         <span class="text-black text-capitalize mr-3"><i class="icofont-calendar mr-1"></i>{{date('d-m-Y', strtotime($actualitie->created_at))}}</span>
                                     </div>
                                     <h2 class="mt-3 mb-3"><a href="{{ url('/actualities/'.$actualitie->id) }}">{{$actualitie->name}}</a></h2>
-                                    <p class="mb-4">{{$actualitie->text}}</p>
+                                    <p class="mb-4 slicedText">{{$actualitie->text}}</p>
                                     <a href="{{ url('/actualities/'.$actualitie->id) }}" class="btn btn-main btn-icon btn-round-full">{{__('home.actualities_text3')}}<i class="icofont-simple-right ml-2  "></i></a>
                                 </div>
                             </div>
@@ -118,7 +118,11 @@
 
 @section('js')
     <script type="text/javascript">
-
+        $(".slicedText").each(function(){
+            var text = $(this).html();
+            text = text.slice(0, 150);
+            $(this).html(text);
+        });
     </script>
 
 @endsection
