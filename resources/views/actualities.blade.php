@@ -121,7 +121,7 @@
         $(".slicedText").each(function(){
             var text = $(this).html();
             text = text.slice(0, 250);
-            $(this).html(text + "...");
+            $(this).html(text + "..."); 
         });
     </script>
 
