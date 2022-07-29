@@ -208,7 +208,7 @@
                 <div class="col-lg-5">
                     <div class="cta-content">
                         <div class="divider mb-4"></div>
-                        <h2 class="mb-5 text-lg">{{__('home.text15')}} <span class="title-color">{{__('home.text16')}}</span></h2>
+                        <h2 class="mb-5 text-lg title-color">{{__('home.text15')}} <span class="title-color">{{__('home.text16')}}</span></h2>
                         <a href="{{ route('contact') }}" class="btn btn-main-2 btn-round-full baContact">{{__('home.text17')}}<i class="icofont-simple-right  ml-2"></i></a>
                     </div>
                 </div>
