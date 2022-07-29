@@ -77,7 +77,7 @@
                         </div>
                         <div class="content mt-3 product_view" data-id="{{$product->id}}">
                             <h4 class="mb-0"><a href="{{ route('product', $product->id) }}">{{$product->names[0]->name}}</a></h4>
-                            <p>{{__('home.product_text8')}} {{$product->surface}} <span class="superscript">2</span></p>
+                            <p>{{__('home.product_text8')}} {{$product->surface}} m<span class="superscript">2</span></p>
                             <!-- <p>{{$product->id}}</p> -->
                         </div>
                     </div>
