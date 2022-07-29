@@ -36,8 +36,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 centered">
-                    <h2 class="title-color resizedFont">{!!__('home.about_text3')!!}</h2>
-                    <img src='images/gradprojektgroup.jpg'>
+                    <a href="https://www.gradprojekt.group/">
+                        <h2 class="title-color resizedFont">{!!__('home.about_text3')!!}</h2>
+                        <img src='images/gradprojektgroup.jpg'>
+                    </a>
                 </div>
                 <div class="col-lg-8 justified">
                     <p>{!!__('home.about_text4')!!}</p>
