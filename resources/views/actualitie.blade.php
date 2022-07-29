@@ -121,7 +121,7 @@
             case 39:
                 $('#lightboxed--bttn_next').click();
                 break;
-            case "Escape":
+            case 27:
                 $('#lightboxed--bttn_close').click();
                 break;
         }
