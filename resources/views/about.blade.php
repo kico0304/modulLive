@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 centered">
-                    <a href="https://www.gradprojekt.group/">
+                    <a href="https://www.gradprojekt.group/" target=”_blank”>
                         <h2 class="title-color resizedFont">{!!__('home.about_text3')!!}</h2>
                         <img src='images/gradprojektgroup.jpg'>
                     </a>
