@@ -39,7 +39,9 @@
                     <div class="doctor-details mt-4 mt-lg-0">
                         <h2 class="text-md">{{__('home.technology_text3')}}</h2>
                         <div class="divider my-4"></div>
+
                         <!-- <img style="width: 300px;float: left;margin-right: 30px;margin-bottom: 30px;" src="images/tech1.jpg" > -->
+                        
                         <p>{{__('home.technology_text4')}}</p>
                     </div>
                 </div>
@@ -58,7 +60,9 @@
                     <div class="doctor-details mt-4 mt-lg-0">
                         <h2 class="text-md">{{__('home.technology_text7')}}</h2>
                         <div class="divider my-4"></div>
+
                         <!-- <img style="width: 300px;float: left;margin-right: 30px;margin-bottom: 30px;" src="images/tech2.png" > -->
+
                         <p>{{__('home.technology_text8')}}</p>
                     </div>
                 </div>
