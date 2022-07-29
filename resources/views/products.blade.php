@@ -86,16 +86,18 @@
 
                 <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;{{$product->type}}&quot;,&quot;{{$product->type}}&quot;]">
                     <div class="position-relative doctor-inner-box">
+                        <a href="{{ route('modules') }}">
                         <div class="doctor-profile">
-                        <div class="doctor-img">
+                            <div class="doctor-img">
                                 <img src="{{asset('images/products/product_'.$product->id.'/'.$product->images[0]->name)}}" class="img-fluid w-100">
                                 <div class="overlay_combination"></div>
                                 <i class="icofont-question-circle"></i>
-                        </div>
+                            </div>
                         </div>
                         <div class="content mt-3">
-                            <h4 style="text-align:center" class="mb-0"><a href="{{ route('modules') }}">{{__('home.product_text9')}}</a></h4>
+                            <h4 style="text-align:center" class="mb-0">{{__('home.product_text9')}}</h4>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
