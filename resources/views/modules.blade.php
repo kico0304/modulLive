@@ -63,7 +63,7 @@
                             <p style="margin-left: 30px;" class="inlineFlex"><b>{{$module->part_names[0]->name}}</b></p>
                             <div class="hiddableQuantity" style="margin-left: 30px; margin-bottom: 15px; display: none;">
                                 <p style="margin-bottom: 0;">{{__('home.module_text8')}}</p>
-                                <input class="quantityInputEach" moduleName="{{$module->part_names[0]->name}}" price="{{$module->price}}" type="number" placeholder="{{__('home.module_text11')}}">
+                                <input class="quantityInputEach" moduleName="{{$module->part_names[0]->name}}" price="{{$module->price}}" type="number" placeholder="{{__('home.module_text11')}}" min="0">
                             </div>
                             <p style="margin-left: 30px;">{{$module->part_texts[0]->text}}</p>
                             <p style="margin-left: 30px;">{{__('home.module_text9')}} {{$module->surface}} m<span class="superscript">2</span></p>
