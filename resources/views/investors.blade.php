@@ -126,7 +126,7 @@
                         <div class="col-lg-6 col-md-6 margined10">
                             <div class="form-group">
                                 <label>{{__('home.investor_text17')}}</label>
-                                <input name="modelAnumber" id="modelAnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}">
+                                <input name="modelAnumber" id="modelAnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}" min="0">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 margined10">
@@ -137,7 +137,7 @@
                         <div class="col-lg-6 col-md-6 margined10">
                             <div class="form-group">
                                 <label>{{__('home.investor_text18')}}</label>
-                                <input name="modelBnumber" id="modelBnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}">
+                                <input name="modelBnumber" id="modelBnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}" min="0">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 margined10">
@@ -148,7 +148,7 @@
                         <div class="col-lg-6 col-md-6 margined10">
                             <div class="form-group">
                                 <label>{{__('home.investor_text19')}}</label>
-                                <input name="modelDnumber" id="modelDnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}">
+                                <input name="modelDnumber" id="modelDnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}" min="0">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 margined10">
