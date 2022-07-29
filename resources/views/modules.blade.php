@@ -66,8 +66,8 @@
                                 <input class="quantityInputEach" moduleName="{{$module->part_names[0]->name}}" price="{{$module->price}}" type="number" placeholder="{{__('home.module_text11')}}">
                             </div>
                             <p style="margin-left: 30px;">{{$module->part_texts[0]->text}}</p>
-                            <p style="margin-left: 30px;">{{__('home.module_text9')}} {{$module->surface}}</p>
-                            <p style="margin-left: 30px;"><b>{{__('home.module_text10')}} {{$module->price}}</b></p>
+                            <p style="margin-left: 30px;">{{__('home.module_text9')}} {{$module->surface}} m<span class="superscript">2</span></p>
+                            <p style="margin-left: 30px;"><b>{{__('home.module_text10')}} {{$module->price}} €</b></p>
                         </div>
                         <div class="col-sm-6 centered">
                             @foreach($module->part_images as $part_img)
