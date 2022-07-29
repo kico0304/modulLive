@@ -116,10 +116,10 @@
       document.addEventListener('keydown', function(e) {
         switch (e.keyCode) {
             case 37:
-                $('.swiper-button-prev').click();
+                $('#lightboxed--bttn_prev').click();
                 break;
             case 39:
-                $('.swiper-button-next').click();
+                $('#lightboxed--bttn_next').click();
                 break;
             case "Escape":
                 $('#lightboxed--bttn_close').click();
