@@ -112,6 +112,20 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      document.addEventListener('keydown', function(e) {
+        switch (e.keyCode) {
+            case 37:
+                document.querySelector('.swiper-button-prev').click();
+                break;
+            case 39:
+                document.querySelector('.swiper-button-next').click();
+                break;
+            case "Escape":
+                document.querySelector('#lightboxed--bttn_close').click();
+                break;
+        }
+    });
     </script>
 
 @endsection
