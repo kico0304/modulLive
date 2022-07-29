@@ -48,8 +48,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 centered">
-                    <h2 class="title-color resizedFont">{{__('home.about_text5')}}</h2>
-                    <img style="filter: drop-shadow(1px 1px 1px black)" src='images/metkon.png'>
+                    <a href="https://metkon.co/" target=”_blank”>
+                        <h2 class="title-color resizedFont">{{__('home.about_text5')}}</h2>
+                        <img style="filter: drop-shadow(1px 1px 1px black)" src='images/metkon.png'>
+                    </a>
                 </div>
                 <div class="col-lg-8 justified">
                     <p>{!!__('home.about_text6')!!}</p>
@@ -65,21 +67,27 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="about-block-item mb-5 mb-lg-0">
-                        <img src="images/drvoprodex.png" alt="" class="img-fluid w-100">
+                        <a href="https://www.drvoprodex.com/" target=”_blank”>
+                            <img src="images/drvoprodex.png" alt="" class="img-fluid w-100">
+                        </a>
                         <h4 class="mt-3">{{__('home.about_text8')}}</h4>
                         <p class="justified">{{__('home.about_text9')}}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="about-block-item mb-5 mb-lg-0">
-                        <img src="images/unicoop-logo.jpg" alt="" class="img-fluid w-100">
+                        <a href="https://unicoophome.ba/" target=”_blank”>
+                            <img src="images/unicoop-logo.jpg" alt="" class="img-fluid w-100">
+                        </a>
                         <h4 class="mt-3">{{__('home.about_text10')}}</h4>
                         <p class="justified">{{__('home.about_text11')}}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="about-block-item mb-5 mb-lg-0">
-                        <img src="images/doselektro.png" alt="" class="img-fluid w-100">
+                        <a href="https://doselektro.com/" target=”_blank”>
+                            <img src="images/doselektro.png" alt="" class="img-fluid w-100">
+                        </a>
                         <h4 class="mt-3">{{__('home.about_text12')}}</h4>
                         <p class="justified">{{__('home.about_text13')}}</p>
                     </div>
@@ -99,22 +107,30 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="award-img">
-                                <img src="images/alumil.png" alt="" class="img-fluid">
+                                <a href="https://www.alumil.com/" target=”_blank”>
+                                    <img src="images/alumil.png" alt="" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="award-img">
-                                <img src="images/aragosta.png" alt="" class="img-fluid">
+                                <a href="https://aragostainvest.com/" target=”_blank”>
+                                    <img src="images/aragosta.png" alt="" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="award-img">
-                                <img src="images/ardor.png" alt="" class="img-fluid">
+                                <a href="http://www.ardornamjestaj.com/" target=”_blank”>
+                                    <img src="images/ardor.png" alt="" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="award-img">
-                                <img src="images/dacom.png" alt="" class="img-fluid">
+                                <a href="https://dacomtrade.com/" target=”_blank”>
+                                    <img src="images/dacom.png" alt="" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                     </div>
