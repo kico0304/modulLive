@@ -100,7 +100,7 @@
             <div class="row" style="margin:0">
                 <p class="textJustify">{{__('home.investor_text12')}}</p>
             </div>
-            <div class="row">
+            <div class="row test">
                 <h3 id="scrollhere" class="margined30 centered flexGrow1 myMainColorForTexts">{{__('home.investor_text13')}}</h3>
                 <form id="contact-form" class="contact__form" method="post" action="{{ asset('calc.php') }}">
                     <div class="row">
@@ -123,7 +123,22 @@
                                 <input name="landPrice" id="landPrice" type="number" class="form-control" placeholder="{{__('home.investor_text59')}}">
                             </div>
                         </div>
+                        @foreach($modules as $module)
                         <div class="col-lg-6 col-md-6 margined10">
+                            <div class="form-group">
+                                <label>{{$module->part_names[0]->name}}</label>
+                                <input name="model{{$module->id}}number" id="model{{$module->id}}number" type="number" class="form-control clickableInput" placeholder="{{__('home.investor_text60')}}" min="0" priceValue="{{$module->price}}">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 margined10">
+                        @foreach($module->part_images as $part_img)
+                        <div class="part-image-fixed">
+                            <img src="{{asset('images/parts/part_'.  $module->id.'/'.$part_img->name)}}" />
+                        </div>
+                        @endforeach
+                        </div>
+                        @endforeach
+                        <!-- <div class="col-lg-6 col-md-6 margined10">
                             <div class="form-group">
                                 <label>{{__('home.investor_text17')}}</label>
                                 <input name="modelAnumber" id="modelAnumber" type="number" class="form-control" placeholder="{{__('home.investor_text60')}}" min="0">
@@ -155,7 +170,7 @@
                             <div class="part-image-fixed">
                                 <img src="images/veca-soba_.png" />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-12 col-md-12 margined10">
                             <h3 class="myMainColorForTexts">{{__('home.investor_text20')}} <span id="ukupnoSoba">0</span></h3>
                             <input name="totalRoomsHidden" id="totalRoomsHidden" type="number" class="form-control" hidden>
@@ -221,7 +236,7 @@
                         <div class="col-lg-4 col-md-6">
                             <p>{{__('home.investor_text32')}} <span id="landPrice_">- €</span></p>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <!-- <div class="col-lg-4 col-md-6">
                             <p>{{__('home.investor_text33')}} <span id="modelAnumber_">-</span></p>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -229,7 +244,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <p>{{__('home.investor_text35')}} <span id="modelDnumber_">-</span></p>
-                        </div>
+                        </div> -->
                         <div class="col-lg-4 col-md-6">
                             <p>{{__('home.investor_text36')}} <span id="finalBrojSoba_">-</span></p>
                         </div>
@@ -344,14 +359,22 @@
 
         $(document).ready(function(){
             //global variables
+
+            /* valjda ovo ostaje */
             let landPrice;
-            let modelAnumber;
-            let modelAnumberPrice = 25736;
-            let modelBnumber;
-            let modelBnumberPrice = 34789;
-            let modelDnumber;
-            let modelDnumberPrice = 20794;
-            let finalBrojSoba;
+            /* valjda ovo ostaje */
+
+            /* PROBLEM */
+            //let modelAnumber;
+            //let modelAnumberPrice = 25736;
+            //let modelBnumber;
+            //let modelBnumberPrice = 34789;
+            //let modelDnumber;
+            //let modelDnumberPrice = 20794;
+            /* PROBLEM */
+            
+            /* valjda ovo ostaje */
+            let finalBrojSoba = 0;
             let totalInvestion;
             let numberOfYears;
             let loanPayment;
@@ -361,66 +384,116 @@
             let averageRent;
             let totalIncome;
             let clickedButton;
+            /* valjda ovo ostaje */
 
-            //function for room numbers
-            $("#modelAnumber, #modelBnumber, #modelDnumber").change(function(){
-                if($("#modelAnumber").val()){
-                    modelAnumber = $("#modelAnumber").val();
-                    $("#modelAnumber_").text(modelAnumber);
-                } else{
-                    modelAnumber = 0;
-                }
-                if($("#modelBnumber").val()){
-                    modelBnumber = $("#modelBnumber").val();
-                    $("#modelBnumber_").text(modelBnumber);
-                } else{
-                    modelBnumber = 0;
-                }
-                if($("#modelDnumber").val()){
-                    modelDnumber = $("#modelDnumber").val();
-                    $("#modelDnumber_").text(modelDnumber);
-                } else{
-                    modelDnumber = 0;
-                }
-                finalBrojSoba = parseInt(modelAnumber) + parseInt(modelBnumber)*2 + parseInt(modelDnumber);
+            //NOVA SKRIPTA START
+            $('.clickableInput').change(function(){
+                //broj prostorija
+                finalBrojSoba = 0;
+                totalInvestion = 0;
+
+                $('.clickableInput').each(function(){
+                    var brojProstorijaSingle = $(this).val();
+                    var cijenaSingle = $(this).attr('priceValue');
+                    if(brojProstorijaSingle == ""){
+                        brojProstorijaSingle = 0;
+                    }
+                    //dupliciraj ako je modul B
+                    if($(this).attr('name') == "model2number"){
+                        cijenaUkupnaSingle = parseInt(cijenaSingle) * parseInt(brojProstorijaSingle);
+                        brojProstorijaSingle = brojProstorijaSingle * 2;
+                    }else if($(this).attr('name') == "model1number"){
+                        cijenaUkupnaSingle = parseInt(cijenaSingle) * parseInt(brojProstorijaSingle);
+                        brojProstorijaSingle = brojProstorijaSingle * 1;
+                    }else if($(this).attr('name') == "model3number"){
+                        cijenaUkupnaSingle = parseInt(cijenaSingle) * parseInt(brojProstorijaSingle);
+                        brojProstorijaSingle = brojProstorijaSingle * 1;
+                    }else if($(this).attr('name') == "model4number"){
+                        cijenaUkupnaSingle = parseInt(cijenaSingle) * parseInt(brojProstorijaSingle);
+                        brojProstorijaSingle = brojProstorijaSingle * 1;
+                    }else{
+                        cijenaUkupnaSingle = parseInt(cijenaSingle) * parseInt(brojProstorijaSingle);
+                        brojProstorijaSingle = 0;
+                    }
+                    
+                    finalBrojSoba = finalBrojSoba + parseInt(brojProstorijaSingle);
+                    totalInvestion = totalInvestion + parseInt(cijenaUkupnaSingle);
+                })
+
+                //testni prikaz ukupnog broja soba
+                console.log("Ukupno: "+finalBrojSoba);
+                console.log("Ukupna cijena: "+totalInvestion);
+
+                //kopirano upisivanje u polja
                 $("#ukupnoSoba").text(finalBrojSoba);
                 $("#finalBrojSoba_").text(finalBrojSoba);
                 $("#totalRoomsHidden").val(finalBrojSoba);
-            });
-
-            //function for prices and total investion
-            $("#landPrice, #modelAnumber, #modelBnumber, #modelDnumber").change(function(){
-                if($("#landPrice").val()){
-                    landPrice = $("#landPrice").val();
-                    $("#landPrice_").text(landPrice+".00 €");
-                } else{
-                    landPrice = 0;
-                }
-                if($("#modelAnumber").val()){
-                    modelAnumber = $("#modelAnumber").val();
-                } else{
-                    modelAnumber = 0;
-                }
-                if($("#modelBnumber").val()){
-                    modelBnumber = $("#modelBnumber").val();
-                } else{
-                    modelBnumber = 0;
-                }
-                if($("#modelDnumber").val()){
-                    modelDnumber = $("#modelDnumber").val();
-                } else{
-                    modelDnumber = 0;
-                }
-                totalInvestion =
-                    parseInt(landPrice) +
-                    parseInt(modelAnumber)*parseInt(modelAnumberPrice) +
-                    parseInt(modelBnumber)*parseInt(modelBnumberPrice) +
-                    parseInt(modelDnumber)*parseInt(modelDnumberPrice);
-
                 $("#ukupnaInvesticija").text(totalInvestion.toFixed(2)+" €");
                 $("#totalInvestion_").text(totalInvestion.toFixed(2)+" €");
                 $("#totalInvestionHidden").val(totalInvestion.toFixed(2));
             });
+
+            //NOVA SKRIPTA END
+
+            //function for room numbers
+            // $("#modelAnumber, #modelBnumber, #modelDnumber").change(function(){
+            //     if($("#modelAnumber").val()){
+            //         modelAnumber = $("#modelAnumber").val();
+            //         $("#modelAnumber_").text(modelAnumber);
+            //     } else{
+            //         modelAnumber = 0;
+            //     }
+            //     if($("#modelBnumber").val()){
+            //         modelBnumber = $("#modelBnumber").val();
+            //         $("#modelBnumber_").text(modelBnumber);
+            //     } else{
+            //         modelBnumber = 0;
+            //     }
+            //     if($("#modelDnumber").val()){
+            //         modelDnumber = $("#modelDnumber").val();
+            //         $("#modelDnumber_").text(modelDnumber);
+            //     } else{
+            //         modelDnumber = 0;
+            //     }
+            //     finalBrojSoba = parseInt(modelAnumber) + parseInt(modelBnumber)*2 + parseInt(modelDnumber);
+            //     $("#ukupnoSoba").text(finalBrojSoba);
+            //     $("#finalBrojSoba_").text(finalBrojSoba);
+            //     $("#totalRoomsHidden").val(finalBrojSoba);
+            // });
+
+            //function for prices and total investion
+            // $("#landPrice, #modelAnumber, #modelBnumber, #modelDnumber").change(function(){
+            //     if($("#landPrice").val()){
+            //         landPrice = $("#landPrice").val();
+            //         $("#landPrice_").text(landPrice+".00 €");
+            //     } else{
+            //         landPrice = 0;
+            //     }
+            //     if($("#modelAnumber").val()){
+            //         modelAnumber = $("#modelAnumber").val();
+            //     } else{
+            //         modelAnumber = 0;
+            //     }
+            //     if($("#modelBnumber").val()){
+            //         modelBnumber = $("#modelBnumber").val();
+            //     } else{
+            //         modelBnumber = 0;
+            //     }
+            //     if($("#modelDnumber").val()){
+            //         modelDnumber = $("#modelDnumber").val();
+            //     } else{
+            //         modelDnumber = 0;
+            //     }
+            //     totalInvestion =
+            //         parseInt(landPrice) +
+            //         parseInt(modelAnumber)*parseInt(modelAnumberPrice) +
+            //         parseInt(modelBnumber)*parseInt(modelBnumberPrice) +
+            //         parseInt(modelDnumber)*parseInt(modelDnumberPrice);
+
+            //     $("#ukupnaInvesticija").text(totalInvestion.toFixed(2)+" €");
+            //     $("#totalInvestion_").text(totalInvestion.toFixed(2)+" €");
+            //     $("#totalInvestionHidden").val(totalInvestion.toFixed(2));
+            // });
 
             //function for loan calculation
             $("#numberOfYears, #yearlyInterest, #landPrice, #modelAnumber, #modelBnumber, #modelDnumber, #dailyRentPrice, #averageRent").change(function(){

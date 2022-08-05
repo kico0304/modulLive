@@ -63,7 +63,18 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function investors(){
-        return view('investors');
+
+        $lang = Lang::locale();
+
+        $modules = PartsForProduct::with(['part_images', 'part_names' => function($q) use($lang) {
+            $q->where('language', '=', $lang);
+        }, 'part_texts' => function($q) use($lang) {
+            $q->where('language', '=', $lang);
+        }])->get();
+
+        return view('investors', [
+            'modules'  => $modules
+        ]);
     }
 
     /**
