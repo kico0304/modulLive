@@ -136,6 +136,7 @@
                             @endforeach
                         </div>
                         @endforeach
+                        
                         <!-- <div class="col-lg-6 col-md-6 margined10">
                             <div class="form-group">
                                 <label>{{__('home.investor_text17')}}</label>
