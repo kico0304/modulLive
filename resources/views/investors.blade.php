@@ -129,13 +129,11 @@
                                 <label>{{$module->part_names[0]->name}}</label>
                                 <input name="model{{$module->id}}number" id="model{{$module->id}}number" type="number" class="form-control clickableInput" placeholder="{{__('home.investor_text60')}}" min="0" priceValue="{{$module->price}}">
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 margined10">
-                        @foreach($module->part_images as $part_img)
-                        <div class="part-image-fixed">
-                            <img src="{{asset('images/parts/part_'.  $module->id.'/'.$part_img->name)}}" />
-                        </div>
-                        @endforeach
+                            @foreach($module->part_images as $part_img)
+                            <div class="part-image-fixed">
+                                <img src="{{asset('images/parts/part_'.  $module->id.'/'.$part_img->name)}}" />
+                            </div>
+                            @endforeach
                         </div>
                         @endforeach
                         <!-- <div class="col-lg-6 col-md-6 margined10">
