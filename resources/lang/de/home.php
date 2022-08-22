@@ -75,6 +75,9 @@ return [
     'text25' => 'Warum MMM?',
     'text26' => 'ModulMobileHomes',
     'text27' => 'MMH-Einrichtungen werden nach den tatsächlichen Bedürfnissen der Nutzer dimensioniert, und die Modularität und Einzigartigkeit der Wohnstruktur wird durch die Möglichkeiten erreicht, mobile Einheiten zu kombinieren, die sich mit modernem Design in jede natürliche Umgebung einfügen.',
+    'text28' => 'DOWNLOAD',
+    'text29' => 'Our Catalogue',
+    'text30' => 'Download here',
 
     /*
     |--------------------------------------------------------------------------

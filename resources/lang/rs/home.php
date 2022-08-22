@@ -75,6 +75,9 @@ return [
     'text25' => 'Zašto MMH?',
     'text26' => 'ModulMobileHomes',
     'text27' => 'MMH objekti su dimenzionisani prema stvarnim potrebama korisnika, a modularnost i jedinstvenost stambene strukture je postignuta zahvaljujući mogućnostima kombinovanja mobilnih jedinica, koje se modernim dizajnom uklapaju u svako prirodno okruženje.',
+    'text28' => 'PREUZMITE',
+    'text29' => 'Naš katalog',
+    'text30' => 'Preuzmite ovdje',
 
     /*
     |--------------------------------------------------------------------------

@@ -176,14 +176,16 @@
 
                         <div class="feature-item mb-5 mb-lg-0">
                             <div class="feature-icon mb-4">
-                                <i class="icofont-ui-clock"></i>
+                                <i class="icofont-read-book"></i>
                             </div>
-                            <span>{{__('home.text5')}}</span>
-                            <h4 class="mb-3">{{__('home.text6')}}</h4>
+                            <span>{{__('home.text28')}}</span>
+                            <h4 class="mb-3">{{__('home.text29')}}</h4>
                             <ul class="w-hours list-unstyled">
-                                <li class="d-flex justify-content-between">{{__('home.text7')}} <span>{{__('home.text10')}}</span></li>
-                                <li class="d-flex justify-content-between">{{__('home.text8')}} <span>{{__('home.text11')}}</span></li>
-                                <li class="d-flex justify-content-between">{{__('home.text9')}} <span>{{__('home.text12')}}</span></li>
+                                <a href="catalogs/<?php echo $lang ?>-catalog.pdf" target="_blank">
+                                    <li class="d-flex justify-content-between"><img src="images/pdf-logo.png" alt="" style="width: 60px"></li>
+                                    <li class="d-flex justify-content-between" style="display: block!important;"><h4 style="line-height: auto; margin-bottom: 0;">{{__('home.text30')}}</h4><!-- <span>{{__('home.text11')}}</span> --></li>
+                                </a>
+                                <!-- <li class="d-flex justify-content-between"><{{__('home.text9')}} <span>{{__('home.text12')}}</span></li> -->
                             </ul>
                         </div>
 

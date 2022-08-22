@@ -75,6 +75,9 @@ return [
     'text25' => 'Why MMH?',
     'text26' => 'ModulMobileHomes',
     'text27' => 'MMH facilities are dimensioned according to the real needs of users, and the modularity and uniqueness of the housing structure is achieved through the possibilities of combining mobile units that blend with any natural environment with modern design.',
+    'text28' => 'DOWNLOAD',
+    'text29' => 'Our Catalogue',
+    'text30' => 'Download here',
 
     /*
     |--------------------------------------------------------------------------
