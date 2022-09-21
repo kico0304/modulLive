@@ -76,7 +76,7 @@
                     </div>
                 @endforeach
                 </div>
-                @if(file_exists(asset('images/products/product_'.$product->id.'/'.$product->house_foundation)))
+                @if($product->house_foundation)
                 <div class="col-lg-12 mb-5 flexCenter">
                     <img style="max-width:700px" src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
                 </div>
