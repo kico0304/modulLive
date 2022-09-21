@@ -53,6 +53,8 @@ Route::middleware(['auth', 'auth.admin'])->prefix('admin')->group(function () {
     Route::post('/edit_product',            'AdminController@edit_product');
     Route::post('/delete_product',          'AdminController@delete_product');
     Route::post('/delete_product_photo',    'AdminController@delete_product_photo');
+    Route::post('/delete_foundation',       'AdminController@delete_product_foundation');
+
     Route::post('/delete_part_product',     'AdminController@delete_part_product');
 
     //part routes

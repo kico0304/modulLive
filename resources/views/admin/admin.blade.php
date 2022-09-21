@@ -84,6 +84,10 @@
                 </div>
             @endforeach
             <div class="row">
+                <label for="house_foundation">Upload House Foundation Image</label>
+                <input type="file" name="house_foundation" class="form-control house_foundation" id="house_foundation">
+            </div>
+            <div class="row">
                 <label for="photo_upload">Upload Images</label>
                 <input type="file" name="photos[]" class="form-control uploaded_photo" id="photo_upload" multiple="">
             </div>
@@ -179,11 +183,29 @@
                         @endif
 
                         <div class="row">
+                            <label>Upload House Foundation Image</label>
+                            <input type="file" name="house_foundation" class="form-control house_foundation">
+                        </div>
+                        <div class="row">
                             <label>Upload Images</label>
                             <input type="file" name="photos[]" class="form-control uploaded_photo" multiple="">
                         </div>
                         <br>
                         <br>
+                        @if($product->house_foundation != null)
+                            <div class="row foundation_class">
+                                <h4>Product House Foundation Image</h4>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="edit_img" alt="edit_image" src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
+                                            <br>
+                                            <button class="btn btn-danger btn-sm delete_foundation" data-id="{{$product->id}}">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                         @if(!$product->images->isEmpty())
                             <div class="row">
                                 <h4>Product images</h4>
@@ -298,7 +320,7 @@
 
                 e.preventDefault();
 
-                if(!confirm('Are you sure you want to delete product?')){
+                if(!confirm('Are you sure you want to delete product photo?')){
                     return false;
                 }
 
@@ -313,6 +335,31 @@
                     type: 'post',
                     success: function (ret) {
                         $('.edit_photo_'+ret.image_id).hide();
+                    },
+                    error: function (err) {
+                        alert("Error");
+                    }
+                })
+            });
+
+            //edit delete_foundation photo
+            $('.delete_foundation').click(function (e) {
+
+                e.preventDefault();
+
+                if(!confirm('Are you sure you want to delete product foundation?')){
+                    return false;
+                }
+
+                let id = $(this).data('id');
+
+                $.ajax({
+                    url: '{{ url('/admin/delete_foundation') }}',
+                    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                    data: {'id': id},
+                    type: 'post',
+                    success: function (ret) {
+                        $('.foundation_class').hide();
                     },
                     error: function (err) {
                         alert("Error");

@@ -122,6 +122,24 @@ class AdminController extends Controller
             }
         }
 
+        if ($foundation_photo = $request->file('house_foundation')) {
+
+            $product = Product::where('id', $request['product_id'])->first();
+
+            $image_path = public_path('/images/products/product_'.$product->id.'/'.$product->house_foundation); // upload path
+            if(File::exists($image_path)) {
+                File::delete($image_path);
+            }
+
+            // Define upload path
+            $destinationPath = public_path('/images/products/product_'.$product->id.'/'); // upload path
+            // Upload Orginal Image
+            $profileImage =$foundation_photo->getClientOriginalName();
+            $foundation_photo->move($destinationPath, $profileImage);
+
+            Product::where('id', $product->id)->update(['house_foundation' => $profileImage]);
+        }
+
         if ($photos = $request->file('photos')) {
 
             // Define upload path
@@ -203,6 +221,16 @@ class AdminController extends Controller
             }
         }
 
+        if ($foundation_photo = $request->file('house_foundation')) {
+            // Define upload path
+            $destinationPath = public_path('/images/products/product_'.$new_product->id.'/'); // upload path
+            // Upload Orginal Image
+            $profileImage =$foundation_photo->getClientOriginalName();
+            $foundation_photo->move($destinationPath, $profileImage);
+
+            Product::where('id', $new_product->id)->update(['house_foundation' => $profileImage]);
+        }
+
         if ($photos = $request->file('photos')) {
 
             // Define upload path
@@ -241,6 +269,23 @@ class AdminController extends Controller
 
         ProductImages::where('id', $image_id)->delete();
         return response()->json(['image_id' => $image_id]);
+
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function delete_product_foundation (Request $request) {
+
+        $prodcut = Product::where('id', $request['id'])->first();
+        $image_path = public_path('/images/products/product_'.$prodcut->id.'/'.$prodcut->house_foundation); // upload path
+        if(File::exists($image_path)) {
+            File::delete($image_path);
+        }
+
+        Product::where('id', $prodcut->id)->update(['house_foundation' => null]);
+        return response()->json(['status' => true]);
 
     }
 
