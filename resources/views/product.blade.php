@@ -76,7 +76,9 @@
                     </div>
                 @endforeach
                 </div>
-                <img src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
+                <div class="col-lg-2 mb-5 flexCenter">
+                    <img src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
+                </div>
                 <div class="divider mx-auto my-4"></div>
                 <div class="col-lg-12 mb-5">
                     @foreach($products as $product)
