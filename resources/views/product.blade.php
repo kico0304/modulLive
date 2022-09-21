@@ -76,9 +76,11 @@
                     </div>
                 @endforeach
                 </div>
+                @if(asset('images/products/product_'.$product->id.'/'.$product->house_foundation))
                 <div class="col-lg-12 mb-5 flexCenter">
                     <img style="max-width:700px" src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
                 </div>
+                @endif
                 <div class="divider mx-auto my-4"></div>
                 <div class="col-lg-12 mb-5">
                     @foreach($products as $product)
