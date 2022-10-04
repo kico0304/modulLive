@@ -78,7 +78,7 @@
                 </div>
                 @if($product->house_foundation)
                 <div class="col-lg-12 mb-5 flexCenter">
-                    <img style="max-width:700px" src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
+                    <img style="max-width:700px;width:100%" src="{{asset('images/products/product_'.$product->id.'/'.$product->house_foundation)}}">
                 </div>
                 @endif
                 <div class="divider mx-auto my-4"></div>
